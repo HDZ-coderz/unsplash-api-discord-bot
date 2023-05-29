@@ -9,11 +9,11 @@ const client = new Client({ intents: [
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
     ] });
-client.on('messageCreate',(message)=>{
+/*client.on('messageCreate',(message)=>{
 if(message.author.bot){return;}
 else{
   
-}});
+}});*/
 client.on("interactionCreate",(interaction)=>{
   if(!(interaction.isChatInputCommand())){return;}
     if(interaction.commandName==='image'){
