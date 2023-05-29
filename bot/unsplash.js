@@ -27,7 +27,6 @@ function rand(pages){
 if(pages==0){
 return 0;
 }else{
-    pages=pages+1;
     let random=Math.floor(Math.random() * pages);
     return random;
 }
